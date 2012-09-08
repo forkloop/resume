@@ -1,0 +1,8 @@
+*.aux
+*.dvi
+*.log
+*.out
+*.bak
+*.ps
+*.gz
+*.backup
