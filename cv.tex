@@ -72,91 +72,93 @@
 
 \vspace{0.25in}
 \begin{minipage}{0.65\textwidth}
-Dept. of Computer Science \& Engineering\\
-\href{http://www.buffalo.edu}{University at Buffalo}\\
-%Homepage: \href{http://www.cse.buffalo.edu/~xliu36}{http://www.cse.buffalo.edu/\~ xliu36}
+Staff Software Engineer @ Google \\
+Seattle, WA \\
 \end{minipage}
 \begin{minipage}{0.45\textwidth}\vspace{-0.1in}
 \begin{tabular}{ll}
 Phone: &806-789-7269 \\
 Email: &\href{mailto:forkloop@gmail.com}{\tt forkloop@gmail.com} \\\end{tabular}
 \end{minipage}
-Homepage: \href{http://www.cse.buffalo.edu/~xliu36}{http://www.cse.buffalo.edu/$\small{\sim}$xliu36}
 
 %\vspace{-0.5cm}
-\section*{Education}
-\begin{itemize}
-\item
-\ressubheading{University at Buffalo The State University of New York}{}{M.S., Computer Science and Engineering (expected 2013)}
-{Sept. 2011 - present}
-
-\item
-\ressubheading{Nanjing University of Posts and Telecommunications(NUPT)}{}{B.E., Telecommunication Engineering}
-{Sept. 2007 - Jun. 2011}
-\end{itemize}
 
 \section*{Experience}
 \begin{itemize}
-\item \textbf{SDE Intern at Amazon.com}
-\hspace{3.4in} \textit{May. 2012 - Aug. 2012}
+	\item \textbf{Staff Software Engineer at Google}
+	\hspace{2.6in} \textit{Dec. 2023 - Present}
+	\begin{itemize}
+		\item{I lead the design, execution and launch of multiple GPU products.}
+	\end{itemize}
+\end{itemize}
+
 \begin{itemize}
-\item{I worked on a project that migrate the data transformation from data warehouse to EMR with Hadoop and Hive.}
-\end{itemize}
-\end{itemize}
-
-\vspace{-0.2in}
-\section*{Projects}
+\item \textbf{Software Engineer \& Technical Lead at Dropbox}
+\hspace{2in} \textit{Jan. 2019 - Dec. 2023}
 \begin{itemize}
-\item \textbf{Sparse Coding with Message Passing Interface}
+	\item{Our team develop and maintain a platform that serve content transformation of users files in a scalable,
+		efficient and secure manner for hundreds of file types and ensure availability of the resulting overall
+		services.}
 
-\hspace{5.2in} \textit{Nov. 2011 - Dec. 2011}
+	\item{This platform processes billions of requests and petabytes of data each day, empowers files previews,
+		media streaming, machine learning inference, malware detection and numerous other product features.
+		We develop and maintain sandboxes for Linux and Windows environments based on LXC/QEMU.}
+\end{itemize}
+\end{itemize}
+
 \begin{itemize}
-\item{Sparse coding is an effective unsupervised learning method that can find a succinct representation for various inputs. However, the
-expensive computational cost has hindered its application for large-scale data. Here we parallel sparse coding with message passing interface (MPI). Based on the two recursive iterations for basis learning and coefficient learning, by averaging the computational cost over 16 computers with MPI, we can achieve a 5.x speedup over the sequential method.
-}
-\end{itemize}
-\item \textbf{Automated Epileptic Diagnosis based on {EEG} series}
+	\item \textbf{Principal Software Engineer at ClassPass}
+	\hspace{2.4in} \textit{Jun. 2018 - Jan. 2019}
+	\item \textbf{Senior Software Engineer at ClassPass}
+	\hspace{2.5in} \textit{Jan. 2016 - Jun. 2018}
 
-\hspace{5.2in} \textit{Apr. 2010 - Aug. 2011}
-% \vspace{-10pt}
+	\begin{itemize}
+		\item{Manage the platform for ingesting, serving and fulfill class inventory we provide on ClassPass.
+			Design and lead the migration from monolith to service oriented architecture for inventory domains.
+			Design and develop a multitenancy Open API for ingesting and fulfill inventory for external schedul-
+			ing platforms.}
+		\item{
+			Design and develop an ingesting pipeline with RxJava, with modular design that can adjust the
+			concurrency of each step, thus maximize the overall throughput.}
+		\item{
+			Set the direction of technical decision on engineering team, develop and maintain shared li-
+			braries, e.g., declarative clients for metrics and cache, queue based asynchronous processing library.}
+	\end{itemize}
+\end{itemize}
+
 \begin{itemize}
-\item{We apply the methods of Machine Learning to diagnose epilepsy automatically. First we extract different features
-from {EEG/MEG} series of both epilepsy patients and controls and select a most discriminative feature set, then train different classifiers with
-this feature set. I also collaborate into coding a Python module - {PyEEG} for the extraction of {EEG/MEG} features. {PyEEG} available at 
-\textit{http://code.google.com/p/pyeeg/}}
+	\item \textbf{Software Development Engineer at Amazon}
+	\hspace{2.4in} \textit{Feb. 2013 - Jan. 2016}
+	
+	\begin{itemize}
+		\item{Design and build a streaming pipeline to archive all retail catalog data to S3. The archived data are
+			aggregated and compressed to minimize the storage cost. The archived data can be accessed via two
+			indexes. The newly archived data can be accessed via a fast index maintained in a key-value store, while
+			we also keep a permanent index to all versions of records using a SSTable-similar file. The pipeline is
+			built on top of an asynchronous execution framework to maximize the throughput and efficiency.}
+		\item{
+			Design and build a translator for the different namespaces we use for representing the catalog data. The
+			translator can perform bi-directional between all namespaces, and the underlying core is generic and
+			readily for further namespaces. The bridges services using different namespaces together, and ends the
+			redundant multi-stage translations.}
+		\item{
+			Design and build a streaming pipeline to publish Amazon reviews of catalog data. The pipeline sub-
+			scribes to multiple sources, performs data reconciliation and sharing, and publishes to downstream. The
+			new pipeline is region-agnostic in terms of the downstream, which significantly simplify the operation
+			workload.}
+	\end{itemize}
 \end{itemize}
 
-%\item \textbf{Registering SAM field information with MRI structural information for surgical navigation}
-%
-%\hspace{13.5cm}\textit{May.2010 - Sept.2010}
-%% \vspace{-10pt}
-%\begin{itemize}
-%\item{We developed a free software named as~{CTF-SAM-OUT} that can register and superpose the Synthetic aperture 
-%magnetometry (SAM) field information produced by CTF MEG\texttrademark system on Magnetic resonance imaging(MRI) generated by 
-%GE\texttrademark system. With this new higher resolution MRI image registered with SAM information shown on surgical navigation, doctors can 
-%perform the surgery more efficiently and effectively. Software is available at \textit{http://sourceforge.net/projects/ctfsamout/}}
-%\end{itemize}
-\end{itemize}
-
-\vspace{-0.5cm}
-\section*{Interests \& Skills}
+\section*{Education}
 \begin{itemize}
-\item Familiar with: \quad Python, Ruby, Java, C, Android, Hadoop, Full Stack Web Development (Ruby on Rails).
-\item Interested in: \quad Node.js, Machine Learning, Parallel Computing(MPI, OpenMP)
-%\item Interested areas: \quad Computer Vision, Machine Learning, Biomedical signal analysis.
+	\item
+	\ressubheading{University at Buffalo The State University of New York}{}{M.S., Computer Science and Engineering (expected 2013)}
+	{Sept. 2011 - present}
+	
+	\item
+	\ressubheading{Nanjing University of Posts and Telecommunications(NUPT)}{}{B.E., Telecommunication Engineering}
+	{Sept. 2007 - Jun. 2011}
 \end{itemize}
-
-\section*{Honors \& Awards}
-%  \begin{tabular}{ll}
-\begin{tabular*}{6.5in}{ll@{\extracolsep{\fill}}r}\vspace{0.2cm}
- \engordnumber{1} & prize in  \href{http://en.mcm.edu.cn/}{Contemporary Undergraduate Mathematical Contest in Modeling, China.} (1.9\%) & 2009\\
- \engordnumber{1} & prize in   ACM Programming Contest of School of Telecommunications & \\\vspace{0.2cm}
- & \& Information Engineering, NUPT. & 2008\\\vspace{0.2cm}
- \engordnumber{2} &  prize in Mathematical Contest in Modeling, NUPT. &  2009\\\vspace{0.2cm}
- \engordnumber{2} & prize in Science and Technology Innovation Training Program, NUPT. & 2009\\\vspace{0.2cm} 
-\engordnumber{2} & prize in "ZTE Corporation Electronic Design Cup" Competition, NUPT. &  2008\\\vspace{0.2cm}
- \engordnumber{3} & Scholarship, NUPT. (25\%) &  2010 - 2007\\\vspace{0.2cm}
-\end{tabular*}
 
 
 \vspace{-0.5cm}
